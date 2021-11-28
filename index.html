@@ -1,0 +1,320 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>TRASD - LoCALisation - Scholarly</title>
+        <link rel="stylesheet" type="text/css" href="css/scholarly.main.css">
+        <link rel="icon" type="image/png" href="media/logo.ico">
+    </head>
+    <body prefix="schema: http://schema.org/ xsd: http://www.w3.org/2001/XMLSchema# sa: https://ns.science.ai/">
+        <header>
+            <div class="banner">
+                <img class="banner" src="media/logo.ico" alt="logo">
+            </div>
+        </header>
+        <div role="contentinfo">
+            <ol role="directory">
+                <li>
+                    <span>1. </span>
+                    <a href="#abstract">Abstract</a>
+                </li>
+                <li>
+                    <span>2. </span>
+                    <a href="#introduction">Introduction</a>
+                </li>
+                <li>
+                    <span>3. </span>
+                    <a href="#architecture">Architecture</a>
+                    <ol role="directory">
+                        <li>
+                            <span>3.1 </span>
+                            <a href="#module-ui">Web Interface</a>
+                            <ol role="directory">
+                                <li>
+                                    <span>3.1.1 </span>
+                                    <a href="#page-home">Page - Home</a>
+                                </li>
+                                <li>
+                                    <span>3.1.2 </span>
+                                    <a href="#page-about">Page - About</a>
+                                </li>
+                                <li>
+                                    <span>3.1.3 </span>
+                                    <a href="#page-scan">Page - Scan</a>
+                                </li>
+                                <li>
+                                    <span>3.1.4 </span>
+                                    <a href="#page-contact">Page - Contact</a>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <span>3.2 </span>
+                            <a href="#module-server">Server</a>
+                        </li>
+                        <li>
+                            <span>3.3 </span>
+                            <a href="#module-scanner">Scanner</a>
+                        </li>
+                        <li>
+                            <span>3.4 </span>
+                            <a href="#module-classifier">Classifier</a>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <span>4. </span>
+                    <a href="#datamodel">Data Modelling</a>
+                </li>
+                <li>
+                    <span>5. </span>
+                    <a href="#conclusion">Development Conclusions</a>
+                </li>
+                <li>
+                    <span>6. </span>
+                    <a href="#references">References</a>
+                </li>
+            </ol>
+            <dl>
+                <dt>
+                    Authors
+                </dt>
+                <dd property="schema:author" typeof="sa:ContributorRole">
+                    <a property="schema:author" href="https://github.com/dinosaph" typeof="schemaPerson">
+                        <span property="schema:givenName">Andra-Maria</span>
+                        <span property="schema:familyName">Oica</span>
+                    </a>
+                </dd>
+            </dl>
+        </div>
+        <article id="what" typeof="schema:ScholarlyArticle" resource="#">
+            <section id="abstract">
+                <h2>
+                    <span>1. </span>
+                    Abstract
+                </h2>
+                <p>
+                    The following article presents you the development of a service-based web application in which users receive defined traffic sign detection data
+                    by providing video data (through webcam/video file upload). The application was developed during InfoIasi College Web Application Development Course,
+                    in autumn-winter 2021 and it uses Tensorflow.js (for the classification), html, css, js (frontend), node.js (backend), MongoDB (database) and traffic
+                    related ontology technologies.
+                </p>
+            </section>
+            <section id="introduction">
+                <h2>
+                    <span>2. </span>
+                    Introduction
+                </h2>
+                <p>
+                    The project's starting idea was that we need a service-based web application through which users could receive traffic sign data output by providing
+                    video input or by collectively collected street/traffic data (such as in Waze app).
+                </p>
+                <p>
+                    S@fe web application is about providing useful live or past traffic data. It sees, it detects traffic signs and it tells you useful details that it
+                    defines with the help of the detected data. Our chosen development path involves the usage of video input through live webcam streaming or video file
+                    upload, these  being turned into frames and further studied for traffic sign detection. The project follows a minimalist approach and design, therefore
+                    being able to attract potential S@fers in need of the provided output data. You need to be S@fe, to learn which travel path is S@fer, to study the traffic
+                    in the area you aren't sure about? You might need our S@fe hand.
+                </p>
+            </section>
+            <section id="architecture">
+                <h2>
+                    <span>3. </span>
+                    Architecture
+                </h2>
+                <p>
+                    S@fe application is proposed to be developed in the following 4 modules:
+                </p>
+                <li>Web Interface - Minimalist and friendly design</li>
+                <li>Server - Main server dealing with basic operations (e.g.: GET /Home)</li>
+                <li>Scanner - Server that deals with the traffic sign scan and communicates with the Classifier</li>
+                <li>Classifier - Classifying module that deals with the video input data => provides output data</li>
+                <section id="module-web">
+                    <h3>
+                        <span>3.1 </span>
+                        Web Interface
+                    </h3>
+                    <p>
+                        UI module with the following functionality:<br>
+                        > The user enters website and walks through different web pages - Home, About, Scan, Contact<br>
+                        > The user wants to receive helpful traffic data so he/she goes to the SCAN page and follows the directions.<br>
+                        > The user uploads video file or chooses to stream his/her webcam, therefore output data will be shown next to the video.
+                         The output data is about the traffic signs detected on the video + defined with additional helpful traffic ontology data.
+                         The user can also request a generated report related to the collected traffic sign data.
+                    </p>
+                    <section id="page-home">
+                        <h4>
+                            <span>3.1.1 </span>
+                            Page - HOME
+                        </h4>
+                        <p>
+                            <i>Welcoming web page that briefly explains/provides overview for the app.</i>
+                        </p>
+                    </section>
+                    <section id="page-about">
+                        <h4>
+                            <span>3.1.2 </span>
+                            Page - ABOUT
+                        </h4>
+                        <p>
+                            <i>Informative web page related to the project and the team.</i>
+                        </p>
+                    </section>
+                    <section id="page-scan">
+                        <h4>
+                            <span>3.1.3 </span>
+                            Page - SCAN
+                        </h4>
+                        <p>
+                            <i>Web page related to the traffic signs scan where users provide video data for further backend operations and receive traffic scan data.</i>
+                        </p>
+                        <li>User clicks UPLOAD to provide video file data</li>
+                        <li>User clicks WEBCAM to provide video data through webcam</li>
+                        <li>Video data turns to frames and is used in the backend for live detection</li>
+                        <li>User gets live traffic sign detection + definition data</li>
+                        <li>User can pause/stop/play the video for study purposes</li>
+                        <li>User can request the collected traffic scan report</li>
+                    </section>
+                    <section id="page-contact">
+                        <h4>
+                            <span>3.1.4 </span>
+                            Page - CONTACT
+                        </h4>
+                        <p>
+                            <i>Web page for app users -> project team interaction.</i>
+                        </p>
+                    </section>
+                </section>
+                <section id="module-server">
+                    <h3>
+                        <span>3.2 </span>
+                        Server
+                    </h3>
+                    <p>
+                        <i>Backend component dealing with all main operations (not related to the traffic scan)</i>
+                    </p>
+                    <li>Purpose: Provides website/web pages to users</li>
+                    <li>Used technologies: node.js</li>
+                </section>
+                <section id="module-scanner">
+                    <h3>
+                        <span>3.3 </span>
+                        Scanner
+                    </h3>
+                    <p>
+                        <i>Backend component dealing with all traffic scan operations</i>
+                    </p>
+                    Purpose:
+                    <li>provides traffic scan defined data</li>
+                    <li>provides traffic scan report</li>
+                    <li>provides interactive traffic study</li>
+                    <br>
+                    Technologies:
+                    <li>node.js</li>
+                    <li>react.js</li>
+                </section>
+                <section id="module-classifier">
+                    <h3>
+                        <span>3.4 </span>
+                        Classifier
+                    </h3>
+                    <p>
+                        <i>Backend component dealing with all traffic sign classifications operations</i>
+                    </p>
+                    Purpose:
+                    <li>provides traffic sign classified data</li>
+                    <br>
+                    Technologies:
+                    <li>Tensorflow.js</li>
+                    <li>romanian traffic sign training data</li>
+                </section>
+            </section>
+            <section id="datamodel">
+                <h2>
+                    <span>4. </span>
+                    Data Modelling
+                </h2>
+                <p>
+                    <i>S@fe application will be storing needed information in a database that is popular, tested, documented, easy to use and lightweight, MongoDB</i>
+                </p>
+            </section>
+            <section id="conclusion">
+                <h2>
+                    <span>5. </span>
+                    Development Conclusions
+                </h2>
+                <p> 
+                    The team proposed the idea to be completely implemented in about 3-4 weeks (maximum) and maximum excitement.
+                </p>
+                TO DO:
+                <ol>
+                    <li>[....0%....] Functional minimalist frontend views</li>
+                    <li>[....0%....] Functional main server</li>
+                    <li>[....0%....] Functional video input - upload file </li>
+                    <li>[....0%....] Functional video input - webcam </li>
+                    <li>[....0%....] Functional conversion of video input to frames </li>
+                    <li>[....0%....] Functional video stop-pause-forward-back utilities </li>
+                    <li>[....0%....] Functional database usage for data storing </li>
+                    <li>[....0%....] Good ontology data usage for output definition </li>
+                    <li>[....0%....] Good romanian traffic data for Classifier</li>
+                    <li>[....0%....] Functional Classifying module</li>
+                    <li>[....0%....] Functional Home Page </li>
+                    <li>[....0%....] Functional About Page </li>
+                    <li>[....0%....] Functional Contact Page </li>
+                    <li>[....0%....] Functional Scan Page </li>
+                </ol>
+            </section>
+            <section id="references">
+                <h2>
+                    <span>6. </span>
+                    References
+                </h2>
+                <li>
+                    <a href="https://www.codementor.io/@evanbechtol/node-service-oriented-architecture-12vjt9zs9i">
+                        Node Service-oriented Architecture
+                    </a>
+                </li>
+                <li>
+                    <a href="https://youtu.be/SksXKCdeWkM">
+                        Image Recognition AI App w/ REACT.JS and TENSORFLOW.JS | Beginners Javascript AI
+                    </a>
+                </li>
+                <li>
+                    <a href="https://youtu.be/hk-709L3RK8">
+                        TensorFlow.js: Make a smart webcam in JS with a pre-trained ML model | Workshop
+                    </a>
+                </li>
+                <li>
+                    <a href="https://codelabs.developers.google.com/codelabs/tensorflowjs-object-detection#4">
+                        TensorFlow.js: Make a smart webcam in JS with a pre-trained ML model | Workshop - Codelabs
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/tensorflow/tfjs-models/tree/master/coco-ssd">
+                        TensorFlow - Object Detection (coco-ssd)
+                    </a>
+                </li>
+                <li>
+                    <a href="https://w3c.github.io/scholarly-html/">
+                        Scholarly article support
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.logomaker.com">
+                        Logo generating tool
+                    </a>
+                </li>
+                <li>
+                    <a href="https://editor.swagger.io/ ">
+                        OpenAPI creation support
+                    </a>
+                </li>
+                <li>
+                    <a href="https://app.diagrams.net/ ">
+                        Diagrams creation support
+                    </a>
+                </li>
+            </section>
+        </article>
+        <br><br>
+    </body>
+</html>
