@@ -1,28 +1,17 @@
 {
-  "name": "trasd-localisation",
+  "name": "src",
   "version": "1.0.0",
-  "description": "Smart traffic signs detector app",
-  "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
-  "scripts": {
-    "test": "echo /'wow/'",
-    "start": "node index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dinosaph/TraSD-LoCALisation.git"
-  },
-  "keywords": [],
-  "author": "dinosaph",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/dinosaph/TraSD-LoCALisation/issues"
-  },
-  "homepage": "https://github.com/dinosaph/TraSD-LoCALisation#readme",
+  "description": "",
+  "main": "app.js",
   "dependencies": {
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "winston": "^3.3.3"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
 }

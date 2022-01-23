@@ -1,4 +1,4 @@
-// config/index.js
+// config/main.js
 
 const config = {
     port:3500
