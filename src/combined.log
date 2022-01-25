@@ -6,3 +6,62 @@
 {"level":"info","message":"Express framework is running - Now listening on port ${config.port}","service":"user-service","time":"2022-01-16T17:06:20.295Z"}
 {"level":"info","message":"Express framework is running - Now listening on port ${config.port}","service":"user-service","time":"2022-01-19T21:11:35.351Z"}
 {"level":"info","message":"Express framework is running - Now listening on port ${config.port}","service":"user-service","time":"2022-01-19T21:12:05.940Z"}
+{"level":"info","message":"Express framework is running - Now listening on port ${config.port}","service":"user-service","time":"2022-01-25T19:23:44.447Z"}
+{"level":"info","message":"About to start Express.","service":"user-service","time":"2022-01-25T19:30:49.778Z"}
+{"level":"info","message":"Express framework is running - Now listening on port ${config.port}","service":"user-service","time":"2022-01-25T19:30:49.778Z"}
+{"level":"info","message":"\n About to start Express.","service":"user-service","time":"2022-01-25T19:31:22.882Z"}
+{"level":"info","message":"Express framework is running - Now listening on port ${config.port}","service":"user-service","time":"2022-01-25T19:31:22.882Z"}
+{"level":"info","message":"About to start Express...","service":"user-service","time":"2022-01-25T19:36:54.392Z"}
+{"level":"info","message":"Express framework is running - Now listening on port ${config.port}","service":"user-service","time":"2022-01-25T19:36:54.392Z"}
+{"level":"info","message":"About to start Express...","service":"user-service","time":"2022-01-25T19:37:42.004Z"}
+{"level":"info","message":"Express framework is running - Now listening on port ${config.port}","service":"user-service","time":"2022-01-25T19:37:42.004Z"}
+{"level":"info","message":"About to start Express...","service":"user-service","time":"2022-01-25T19:38:10.975Z"}
+{"level":"info","message":"Express framework is running - Now listening on port ${config.port}","service":"user-service","time":"2022-01-25T19:38:10.975Z"}
+{"level":"info","message":"About to start Express...","service":"user-service","time":"2022-01-25T19:38:40.032Z"}
+{"level":"info","message":"Express framework is running - Now listening on port ${config.port}","service":"user-service","time":"2022-01-25T19:38:40.032Z"}
+{"level":"info","message":"About to start Express...","service":"user-service","time":"2022-01-25T19:42:52.396Z"}
+{"level":"info","message":"Express framework is running - Now listening on port ${config.port}","service":"user-service","time":"2022-01-25T19:42:52.396Z"}
+{"level":"info","message":"About to start Express...","service":"user-service","time":"2022-01-25T20:08:57.810Z"}
+{"level":"info","message":"Express framework is running - Now listening on port ${config.port}","service":"user-service","time":"2022-01-25T20:08:57.810Z"}
+{"level":"info","message":"About to start Express...","service":"user-service","time":"2022-01-25T20:12:13.134Z"}
+{"level":"info","message":"Express framework is running - Now listening on port ${config.port}","service":"user-service","time":"2022-01-25T20:12:13.134Z"}
+{"level":"info","message":"About to start Express...","service":"user-service","time":"2022-01-25T20:13:28.950Z"}
+{"level":"info","message":"Express framework is running - Now listening on port ${config.port}","service":"user-service","time":"2022-01-25T20:13:28.950Z"}
+{"level":"info","message":"About to start Express...","service":"user-service","time":"2022-01-25T20:32:48.256Z"}
+{"level":"info","message":"Express framework is running - Now listening on port ${config.port}","service":"user-service","time":"2022-01-25T20:32:48.256Z"}
+{"level":"info","message":"About to start Express...","service":"user-service","time":"2022-01-25T20:35:13.231Z"}
+{"level":"info","message":"Express framework is running - Now listening on port ${config.port}","service":"user-service","time":"2022-01-25T20:35:13.231Z"}
+{"level":"info","message":"About to start Express...","service":"user-service","time":"2022-01-25T20:35:42.746Z"}
+{"level":"info","message":"Express framework is running - Now listening on port ${config.port}","service":"user-service","time":"2022-01-25T20:35:42.746Z"}
+{"level":"info","message":"About to start Express...","service":"user-service","time":"2022-01-25T20:37:33.515Z"}
+{"level":"info","message":"Express framework is running - Now listening on port ${config.port}","service":"user-service","time":"2022-01-25T20:37:33.515Z"}
+{"level":"info","message":"About to start Express...","service":"user-service","time":"2022-01-25T20:38:20.949Z"}
+{"level":"info","message":"Express framework is running - Now listening on port ${config.port}","service":"user-service","time":"2022-01-25T20:38:20.949Z"}
+{"level":"info","message":"About to start Express...","service":"user-service","time":"2022-01-25T20:40:13.605Z"}
+{"level":"info","message":"Express framework is running - Now listening on port ${config.port}","service":"user-service","time":"2022-01-25T20:40:13.605Z"}
+{"level":"info","message":"About to start Express...","service":"user-service","time":"2022-01-25T20:46:00.126Z"}
+{"level":"info","message":"Express framework is running - Now listening on port ${config.port}","service":"user-service","time":"2022-01-25T20:46:00.126Z"}
+{"level":"info","message":"About to start Express...","service":"user-service","time":"2022-01-25T21:41:33.506Z"}
+{"level":"info","message":"Express framework is running - Now listening on port ${config.port}","service":"user-service","time":"2022-01-25T21:41:33.506Z"}
+{"level":"info","message":"About to start Express...","service":"user-service","time":"2022-01-25T21:41:54.567Z"}
+{"level":"info","message":"Express framework is running - Now listening on port ${config.port}","service":"user-service","time":"2022-01-25T21:41:54.567Z"}
+{"level":"info","message":"About to start Express...","service":"user-service","time":"2022-01-25T22:08:05.481Z"}
+{"level":"info","message":"Express framework is running - Now listening on port ${config.port}","service":"user-service","time":"2022-01-25T22:08:05.481Z"}
+{"level":"info","message":"About to start Express...","service":"user-service","time":"2022-01-25T22:08:35.748Z"}
+{"level":"info","message":"Express framework is running - Now listening on port ${config.port}","service":"user-service","time":"2022-01-25T22:08:35.748Z"}
+{"level":"info","message":"About to start Express...","service":"user-service","time":"2022-01-25T22:27:20.472Z"}
+{"level":"info","message":"Express framework is running - Now listening on port ${config.port}","service":"user-service","time":"2022-01-25T22:27:20.472Z"}
+{"level":"info","message":"About to start Express...","service":"user-service","time":"2022-01-25T22:28:12.609Z"}
+{"level":"info","message":"Express framework is running - Now listening on port ${config.port}","service":"user-service","time":"2022-01-25T22:28:12.609Z"}
+{"level":"info","message":"About to start Express...","service":"user-service","time":"2022-01-25T22:28:41.569Z"}
+{"level":"info","message":"Express framework is running - Now listening on port ${config.port}","service":"user-service","time":"2022-01-25T22:28:41.569Z"}
+{"level":"info","message":"About to start Express...","service":"user-service","time":"2022-01-25T22:32:39.169Z"}
+{"level":"info","message":"Express framework is running - Now listening on port ${config.port}","service":"user-service","time":"2022-01-25T22:32:39.169Z"}
+{"level":"info","message":"About to start Express...","service":"user-service","time":"2022-01-25T22:34:40.868Z"}
+{"level":"info","message":"Express framework is running - Now listening on port ${config.port}","service":"user-service","time":"2022-01-25T22:34:40.868Z"}
+{"level":"info","message":"About to start Express...","service":"user-service","time":"2022-01-25T22:35:20.715Z"}
+{"level":"info","message":"Express framework is running - Now listening on port ${config.port}","service":"user-service","time":"2022-01-25T22:35:20.715Z"}
+{"level":"info","message":"About to start Express...","service":"user-service","time":"2022-01-25T22:41:18.991Z"}
+{"level":"info","message":"Express framework is running - Now listening on port ${config.port}","service":"user-service","time":"2022-01-25T22:41:18.991Z"}
+{"level":"info","message":"About to start Express...","service":"user-service","time":"2022-01-25T22:42:20.997Z"}
+{"level":"info","message":"Express framework is running - Now listening on port ${config.port}","service":"user-service","time":"2022-01-25T22:42:20.997Z"}
