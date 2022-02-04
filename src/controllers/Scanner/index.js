@@ -1,8 +1,11 @@
 // controllers/Scanner/index.js
-
 const ScannerService = require("../../services/ScannerService");
-const ScannerServiceInstance = new ScannerService();
 
 exports.scannerservice_test = function(req, res) {
-    res.send('NOT IMPLEMENTED: zZzzZ');
+    // async function myFunc() {
+    //     const {ScannerService} = await import("../../services/ScannerService.mjs");
+    //     res.send(ScannerService.test("aaa"));
+    // }
+    // myFunc();
+    res.send(ScannerService.test("aaa"));
 };
