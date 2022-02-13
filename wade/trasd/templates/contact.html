@@ -3,16 +3,16 @@
     <head>
         <title>S@fe</title>
         <script  type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-        <script type="text/javascript" src="js/pages.js"></script>
-        <link type="text/css" rel="stylesheet" href="./css/style.css"/>
-        <link type="image/icon" rel="icon" href="img/logo.png">
+        {% load static %}
+        <link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}"/>
+        <link type="image/icon" rel="icon" href="{% static 'img/logo.png' %}">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <div id="navbar-placeholder"></div>
+        {% include '_navbar.html' %}
 
-        <p>HOME</p>
+        <p>CONTACT</p>
         
-        <div id="footer-placeholder"></div>
+        {% include '_footer.html' %}
     </body>
 </html>

@@ -2,19 +2,14 @@
 <html>
     <head>
         <title>S@fe</title>
-        <!-- Import Jquery library -->
         <script  type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-        <!-- Import TensorFlow.js library -->
-        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js" type="text/javascript"></script>
-        <!-- Load the coco-ssd model to use to recognize things in images -->
-        <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
-        <script type="text/javascript" src="js/pages.js"></script>
-        <link type="text/css" rel="stylesheet" href="./css/style.css"/>
-        <link type="image/icon" rel="icon" href="img/logo.png">
+        {% load static %}
+        <link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}"/>
+        <link type="image/icon" rel="icon" href="{% static 'img/logo.png' %}">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <div id="navbar-placeholder"></div>
+        {% include '_navbar.html' %}
         <p>SCANNER</p>
         <div class="mom-container">
             <div class="kid-container" id="video-container">
@@ -33,7 +28,7 @@
             <button>START/PAUSE</button>
             <button>POST</button>
         </div>
-        <div id="footer-placeholder"></div>
-        <script type="text/javascript" src="js/scanner.js"></script>
+        {% include '_footer.html' %}
+        <script type="text/javascript" src="{% static 'js/scanner.js' %}"></script>
     </body>
 </html>

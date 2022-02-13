@@ -4,7 +4,7 @@ info:
   version: "1.0.0"
   description: |-
     A very cool web app in which you can provide video data (webcam/video file) to be scanned for traffic signs.
-    - [S@fe Github Repo](https://github.com/dinosaph/TraSD-LoCALisation)
+    - [S@fe Github Repo](https://github.com/dinosaph/trasd-LoCALisation)
 tags:
   - name: scan
     description: Operations related to the traffic sign scanner
