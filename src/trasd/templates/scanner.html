@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    {% include '_header.html' %}
+    <body>
+        {% include '_navbar.html' %}
+        {% load static %}
+        <p>SCANNER</p>
+        <div class="mom-container">
+            <div class="kid-container" id="video-container">
+                <img id="video_feed" src="#" alt="Upload or use webcam">
+                <!--<select id="webcam-select" onchange="changeWebcamDevice()" hidden></select>-->
+            </div>
+            <div class="kid-container" id="traffic-info-container">
+                <img id="traffic-info-img" src="#" alt="Traffic sign info">
+                <div></div>
+            </div>
+        </div>
+        <div class="mom-container">
+            <input id="btn_upload_hidden" type="file" hidden/>
+            <button id="btn_upload">UPLOAD</button>
+            <button id="btn_webcam">WEBCAM</button>
+            <button>PRE</button>
+            <button>START/PAUSE</button>
+            <button>POST</button>
+        </div>
+        <script type="text/javascript" src="{% static 'js/scanner.js' %}"></script>
+        {% include '_footer.html' %}
+    </body>
+</html>
+
+<script>
+
+$("#btn_webcam").click(function() {
+    console.log("Clicked WEBCAM button");
+    var $this = $(this);
+    if ($this.text() == "WEBCAM") {
+        console.log("WEBCAM on");
+        $("#video_feed").attr('src', 'scanner/webcam');
+        $this.attr('onclick',"location.href='scanner';");
+        $this.text('STOP WEBCAM');
+    }
+});
+
+$("#btn_upload").click(function() {
+    console.log("Clicked UPLOAD button");
+    $("#btn_upload_hidden").click();
+});
+
+</script>
